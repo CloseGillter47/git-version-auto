@@ -1,0 +1,28 @@
+{
+  "name": "git-auto-node-version",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "gitHooks": {
+    "post-merge": "node scripts/post-merge.js",
+    "commit-msg": "node scripts/commit-msg.js",
+    "post-commit": "node scripts/post-commit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloseGillter47/node-git-auto-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CloseGillter47/node-git-auto-version/issues"
+  },
+  "homepage": "https://github.com/CloseGillter47/node-git-auto-version#readme",
+  "dependencies": {
+    "yorkie": "^2.0.0"
+  }
+}
